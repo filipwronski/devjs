@@ -10,7 +10,7 @@ export default {
   name: 'settings',
   beforeRouteEnter(to, from, next) {
     if (store.state.isAdmin) {
-        next((vm) => {
+        next(() => {
           console.log('ok')
         });
     }
